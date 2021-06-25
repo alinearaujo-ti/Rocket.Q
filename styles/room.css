@@ -3,11 +3,11 @@
 }
 
 #room header{
-    width:100%;
+    width: 100%;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
 #room header .buttons{
@@ -34,13 +34,14 @@
     height: 2rem;
 }
 
+/*** QUESTION FORM ***/
 #question-form h2{
     font-family: 'Poppins', sans-serif;
     font-size: 2.8rem;
     color: var(--black);
     font-weight: 700;
     line-height: 4.2rem;
-    
+
     margin-bottom: 2.4rem;
 }
 
@@ -57,6 +58,7 @@
     background: transparent;
 
     width: 100%;
+
     outline: none;
 }
 
@@ -73,19 +75,75 @@
 #question-form form footer > div{
     display: flex;
     align-items: center;
-    color: var(--icon-details);
+
+    color: var(--icons-details);
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 1.4rem;
 }
 
-#question-form form footer > div img {
+#question-form form footer > div img{
     margin-right: 0.9rem;
 }
 
 #question-form form footer button{
     height: auto;
     padding: .8rem 2.4rem;
-    line-height: 2.4rem;
+    line-height: 2.4rem
 }
 
+
+/******* Questions *****/
+.question-wrapper{
+    background: var(--light-blue);
+    margin-bottom: .8rem;
+    border-radius: 0 .8rem .8rem .8rem ;
+    padding: 2.4rem;
+}
+
+.question-wrapper .question-content{
+    display: flex;
+    align-items: flex-start;
+}
+
+.question-wrapper .question-content .user{
+    background: var(--blue);
+    clip-path: circle(); 
+    padding: 1.4rem; 
+}
+
+.question-wrapper .question-content p{
+    margin-left: 1.6rem;
+    word-break: break-word;
+    display: flex;
+    align-items: center;
+    min-height: 5.5rem;
+}
+.question-wrapper .actions{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.question-wrapper .actions > a{
+    display: flex;
+    align-items: center;
+}
+
+.question-wrapper .actions > a > img{
+    margin-right: .8rem;
+}
+
+.question-wrapper .actions > a + a{
+    margin-left: 2.4rem
+}
+
+.question-wrapper .read {
+    background: var(--grey-medium);
+    opacity: 0.6;
+}
+
+.question-wrapper .read .question-content {
+    background: var(--grey-blue);
+    opacity: 0.6;
+}
